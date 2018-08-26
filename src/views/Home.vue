@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <HomeComponent msg="Welcome to Your Vue.js App"/>
+    <HomeComponent msg="Lost Lake Resort"/>
   </div>
 </template>
 

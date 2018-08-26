@@ -1,6 +1,6 @@
 <template>
   <div class="services">
-    <services-component msg="Services Page"/>
+    <services-component servicesTitle="Services" amenitiesTitle="Amenities"/>
   </div>
 </template>
 
