@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div>
     <h1>{{ msg }}</h1>
     <p>
       Have any questions, comments, or need to reserve a spot? 
@@ -39,9 +39,6 @@ export default {
 <style scoped lang="scss">
   h1 {
     font-size: 2.75em;
-  }
-  h2 {
-    font-size: 2em;
   }
   #locationSection {
     margin: 1em 0;

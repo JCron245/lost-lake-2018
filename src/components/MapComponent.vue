@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div>
     <h1>{{ msg }}</h1>
     <p>
       Call us at <a href="tel:1-760-664-4413">(760) 664-4413</a> or visit our Contact page and reserve your spot today!
@@ -22,7 +22,9 @@ export default {
   h1 {
     font-size: 2.75em;
   }
-  h2 {
-    font-size: 2em;
+  a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #43578f;
   }
 </style>

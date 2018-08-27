@@ -55,7 +55,7 @@
       ALL reservations must be paid for in advance.
     </p>
     <p>
-      <zap-off-icon id="bookIcon" class="icon" aria-hidden="true"></zap-off-icon>
+      <zap-off-icon id="ZapOffIcon" class="icon" aria-hidden="true"></zap-off-icon>
       <span id="cancellation">Cancellation Policy:</span> 
       We require <em>at minimum a 2 week notice</em> prior to arrival in order to receive a refund minus a $10.00 processing fee.
     </p>
