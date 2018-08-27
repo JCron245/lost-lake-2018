@@ -15,16 +15,16 @@
         <!-- Slides with img slot -->
         <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
         <b-carousel-slide>
-          <img slot="img" class="d-block img-fluid w-100" src="../assets/slider1.jpg" alt="image slot">
+          <img slot="img" class="d-block img-fluid w-100" src="../assets/slider1.jpg" alt="Scenic photo of the Lost Lake Lagoon and mountain backdrop">
         </b-carousel-slide>
         <b-carousel-slide>
-          <img slot="img" class="d-block img-fluid w-100" src="../assets/slider2.jpg" alt="image slot">
+          <img slot="img" class="d-block img-fluid w-100" src="../assets/slider2.jpg" alt="Photo of family bringing in their boat from a day on the river">
         </b-carousel-slide>
         <b-carousel-slide>
-          <img slot="img" class="d-block img-fluid w-100" src="../assets/slider3.jpg" alt="image slot">
+          <img slot="img" class="d-block img-fluid w-100" src="../assets/slider3.jpg" alt="Photo of people enjoying the day use area by the lagoon">
         </b-carousel-slide>
         <b-carousel-slide>
-          <img slot="img" class="d-block img-fluid w-100" src="../assets/slider4.jpg" alt="image slot">
+          <img slot="img" class="d-block img-fluid w-100" src="../assets/slider4.jpg" alt="Photo of people riding their waverunners out on the river">
         </b-carousel-slide>
       </b-carousel>
     </div>

@@ -11,7 +11,7 @@
               <b-nav-item to="/home">Home</b-nav-item>
               <b-nav-item to="/services">Services</b-nav-item>
               <b-nav-item to="/rates">Rates</b-nav-item>
-              <b-nav-item to="/resortmap">Park Map</b-nav-item>
+              <b-nav-item to="/resortmap">Map</b-nav-item>
               <b-nav-item to="/contact">Contact Us</b-nav-item>
           </b-navbar-nav>
         </b-collapse>
@@ -27,7 +27,7 @@
             <b-nav-item to="/home">Home</b-nav-item>
             <b-nav-item to="/services">Services</b-nav-item>
             <b-nav-item to="/rates">Rates</b-nav-item>
-            <b-nav-item to="/resortmap">Park Map</b-nav-item>
+            <b-nav-item to="/resortmap">Map</b-nav-item>
             <b-nav-item to="/contact">Contact Us</b-nav-item>
         </b-navbar-nav>
       </b-navbar>

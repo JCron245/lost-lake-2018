@@ -1,6 +1,8 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
+  <div>
+    <h1 style="width: 100%; text-align: center; margin-bottom: 2em;">{{ msg }}</h1>
+    <p style="font-weight: bold; font-size: 1.75em; text-align: center;">Ooops! Something went wrong or that page doesn't exist.</p>
+    <div style="width: 100%; font-size: 8em; text-align: center;">&#9785;</div>
   </div>
 </template>
 
@@ -15,18 +17,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+  h1 {
+    font-size: 2.75em;
+  }
 </style>

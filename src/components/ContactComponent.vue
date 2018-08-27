@@ -1,6 +1,28 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <p>
+      Have any questions, comments, or need to reserve a spot? 
+      Here is our contact information so you can call, write, or visit us! 
+      We would love to hear from you!
+    </p>
+    <address>
+      <div>
+        <span>Email: </span><a href="mailto:lostlakeriverresort@gmail.com">lostlakeriverresort@gmail.com</a>
+      </div>
+      <div>
+        <span>Phone: </span><a href="tel:1-760-664-4413">1(760)664-4413</a>
+      </div>
+      <div id="locationSection">
+        <span>Location: </span>
+        We are located 31 miles north of Blythe California on highway 95 along the Colorado river.
+      </div>
+      <div id="postalSection">
+        <span>Postal Address: </span>
+        42500 US HWY 95<br/>
+        Blythe CA 92225
+      </div>
+    </address>
   </div>
 </template>
 
@@ -15,18 +37,25 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+  h1 {
+    font-size: 2.75em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  #locationSection {
+    margin: 1em 0;
+  }
+  #locationSection, #postalSection {
+    > span {
+      display: block;
+    }
+  }
+  address {
+    > div {
+      > span {
+        font-weight: bold;
+      }
+    }
+  }
 </style>

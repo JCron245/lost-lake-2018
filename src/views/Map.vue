@@ -1,6 +1,6 @@
 <template>
   <div class="map">
-    <map-component msg="Map Page"/>
+    <map-component msg="Campground Map"/>
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-    <contact-component msg="contact Page"/>
+    <contact-component msg="Contact Us"/>
   </div>
 </template>
 

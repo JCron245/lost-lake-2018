@@ -91,14 +91,24 @@ export default {
   #ratesContainer {
     display: flex;
     padding-top: 1em;
-    > div {
-      display: flex;
+    @media (max-width: 575.98px) { 
       flex-direction: column;
-      padding: 1em;
+    }
+    > div {
+      display: block;
+      padding: 1.5em;
       flex-grow: 1;
       flex-basis: 0;
-      border: 1px solid #AAA;
+      border: 1px solid #BBB;
       margin: 0 1em;
+      @media (max-width: 767.98px) { 
+        padding: .75em;
+        margin: 0 .25em;
+      }
+      @media (max-width: 575.98px) { 
+        padding: .65em;
+        margin: 0.25em .25em;
+      }
     }
   }
   .icon {
@@ -131,16 +141,16 @@ export default {
       max-width: 40%;
       display: grid;
       grid-template-columns: 50% 50%;
-    @media (max-width: 991.98px) { 
-      max-width: 60%;
-     }
-    @media (max-width: 767.98px) { 
-      max-width: 100%;
-    }
+      @media (max-width: 991.98px) { 
+        max-width: 60%;
+      }
+      @media (max-width: 767.98px) { 
+        max-width: 100%;
+      }
   }
   #note, #cancellation {
-    color: #43578f;
-    text-decoration: underline;
+    color: #444;
+    font-weight: bold;
   }
   h1 {
     font-size: 2.75em;
@@ -156,8 +166,5 @@ export default {
   #winterList, #summerList {
     display: grid;
     grid-template-columns: 50% 50%;
-    @media (max-width: 575.98px) { 
-      grid-template-columns: 100%;
-    }
   }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="notfound">
-    <not-found-component msg="404 Page"/>
+    <not-found-component msg="404"/>
   </div>
 </template>
 
