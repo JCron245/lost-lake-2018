@@ -6,12 +6,12 @@
 
 <script>
 // @ is an alias to /src
-import MapComponent from '@/components/MapComponent.vue'
+import MapComponent from '@/components/MapComponent.vue';
 
 export default {
   name: 'resortmap',
   components: {
     MapComponent
   }
-}
+};
 </script>

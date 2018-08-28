@@ -36,39 +36,48 @@
 </template>
 
 <script>
+import bNavbar from "bootstrap-vue/es/components/navbar/navbar";
+import bNavbarNav from "bootstrap-vue/es/components/navbar/navbar-nav";
+import bNavbarBrand from "bootstrap-vue/es/components/navbar/navbar-brand";
+import bNavbarToggle from "bootstrap-vue/es/components/navbar/navbar-toggle";
+import bCollapse from "bootstrap-vue/es/components/collapse/collapse";
+import bNavItem from "bootstrap-vue/es/components/nav/nav-item";
+
 export default {
-  name: 'app'
-}
+  name: "app",
+  components: {
+    "b-navbar": bNavbar,
+    "b-navbar-nav": bNavbarNav,
+    "b-navbar-brand": bNavbarBrand,
+    "b-navbar-toggle": bNavbarToggle,
+    "b-collapse": bCollapse,
+    "b-nav-item": bNavItem
+  }
+};
 </script>
 
 
 <style lang="scss">
-h1, h2, h3, h4, h5, h6 {
-  color: #43578f !important;
-}
 header {
   margin-bottom: 3em;
-  @media (max-width: 767.98px) { 
+  @media (max-width: 767.98px) {
     margin-bottom: 1em;
   }
 }
 footer {
   margin-bottom: 2em;
   display: block;
-  @media (max-width: 767.98px) { 
+  @media (max-width: 767.98px) {
     margin-bottom: 0;
-    .navbar-nav { 
+    .navbar-nav {
       display: none;
-      }
+    }
   }
 }
-.bg-info {
-  background-color: white;
-}
 nav.navbar {
-	align-items: flex-end;
+  align-items: flex-end;
   padding: .5rem 0;
-  
+
   @media (max-width: 991.98px) {
     .nav-item {
       font-size: 1em;
@@ -87,13 +96,13 @@ nav.navbar {
   color: #fff;
   background-color: #43578f;
   text-align: center;
-  letter-spacing: 0.5px;
-  transition: background-color 0.2s ease-out;
+  letter-spacing: .5px;
+  transition: background-color .2s ease-out;
   cursor: pointer;
   border-right: 1px solid black;
-  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
   font-size: 1.25em;
-  padding: 0.33em;
+  padding: .33em;
   font-weight: 500;
   &:hover {
     background-color: #6579af;
@@ -109,10 +118,10 @@ nav.navbar {
   }
 }
 #headerLogo {
-  position: relative; 
-  top: .5em; 
+  position: relative;
+  top: .5em;
 }
-@media (max-width: 767.98px) { 
+@media (max-width: 767.98px) {
   #headerLogo {
     margin-bottom: .3em;
   }
@@ -121,4 +130,3 @@ nav.navbar {
   font-size: .75em;
 }
 </style>
-

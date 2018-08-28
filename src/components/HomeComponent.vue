@@ -59,6 +59,9 @@
 </template>
 
 <script>
+import bCarousel from 'bootstrap-vue/es/components/carousel/carousel';
+import bCarouselSlide from 'bootstrap-vue/es/components/carousel/carousel-slide';
+
 export default {
   name: "HomeComponent",
   props: {
@@ -69,11 +72,14 @@ export default {
       slide: 0,
       sliding: null
     }
+  },
+  components: {
+    'b-carousel': bCarousel,
+    'b-carousel-slide': bCarouselSlide
   }
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 #pageTitle {
   color: #43578f;

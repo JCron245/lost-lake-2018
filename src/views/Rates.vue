@@ -1,17 +1,16 @@
 <template>
   <div class="rates">
-    <rates-component msg="Rates Page"/>
+    <rates-component msg="Rates"/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import RatesComponent from '@/components/RatesComponent.vue'
+import RatesComponent from '@/components/RatesComponent.vue';
 
 export default {
   name: 'rates',
   components: {
     RatesComponent
   }
-}
+};
 </script>

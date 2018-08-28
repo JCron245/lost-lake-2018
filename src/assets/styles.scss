@@ -1,0 +1,27 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/nav";
+@import "../../node_modules/bootstrap/scss/navbar";
+@import "../../node_modules/bootstrap/scss/carousel";
+@import "../../node_modules/bootstrap/scss/utilities";
+
+// Global styles go here, will have greater specificty than the bootstrap css
+a:not(.nav-link) {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #43578f;
+}
+h1,h2 {
+  color: #43578f !important;
+}
+h1 {
+  font-size: 2.75em;
+}
+h2 {
+  font-size: 2em;
+}

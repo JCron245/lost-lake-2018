@@ -4,7 +4,7 @@ import Home from './views/Home.vue'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: '/',
@@ -13,40 +13,38 @@ export default new Router({
     {
       path: '/home',
       name: 'home',
-      component: Home
+      component: Home,
+      meta: { title: 'Home - Lost Lake Resort' }
     },
-    //{
-    //  path: '/about',
-    //  name: 'about',
-    //  // route level code-splitting
-    //  // this generates a separate chunk (about.[hash].js) for this route
-    //  // which is lazy-loaded when the route is visited.
-    //  component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    //},
     {
       path: '/services',
       name: 'services',
-      component: () => import('./views/Services.vue')
+      component: () => import('./views/Services.vue'),
+      meta: { title: 'Services - Lost Lake Resort' }
     },
     {
       path: '/resortmap',
       name: 'resortmap',
-      component: () => import('./views/Map.vue')
+      component: () => import('./views/Map.vue'),
+      meta: { title: 'Campground Map - Lost Lake Resort' }
     },
     {
       path: '/rates',
       name: 'rates',
-      component: () => import('./views/Rates.vue')
+      component: () => import('./views/Rates.vue'),
+      meta: { title: 'Rates - Lost Lake Resort' }
     },
     {
       path: '/contact',
       name: 'contact',
-      component: () => import('./views/Contact.vue')
+      component: () => import('./views/Contact.vue'),
+      meta: { title: 'Contact - Lost Lake Resort' }
     },
     {
       path: '/404',
       name: 'notfound',
-      component: () => import('./views/NotFound.vue')
+      component: () => import('./views/NotFound.vue'),
+      meta: { title: '404 - Lost Lake Resort' }
     },
     {
       path: '/*',
@@ -54,3 +52,9 @@ export default new Router({
     }
   ]
 });
+
+router.afterEach((to) => {
+    document.title = to.meta.title || "Lost Lake Resort";
+});
+
+export default router;

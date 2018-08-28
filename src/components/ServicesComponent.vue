@@ -43,14 +43,7 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-h1 {
-  font-size: 2.75em;
-}
-h2 {
-  font-size: 2em;
-}
 #amenitiesContainer {
   display: flex;
   > div, > ul {

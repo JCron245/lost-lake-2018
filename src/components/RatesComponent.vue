@@ -1,6 +1,6 @@
 <template>
   <div id="ratesPage">
-    <h1>Rates</h1>
+    <h1>{{ msg }}</h1>
       We have two different seasons with different rates for full RV Hook-Ups. Call us at 
       <a href="tel:1-760-664-4413">(760) 664-4413</a> or visit our Contact page and reserve your spot today!
     <div id="ratesContainer">
@@ -81,7 +81,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
   #ratesPage {
     > div {
@@ -107,7 +106,7 @@ export default {
       }
       @media (max-width: 575.98px) { 
         padding: .65em;
-        margin: 0.25em .25em;
+        margin: .25em .25em;
       }
     }
   }
@@ -151,17 +150,6 @@ export default {
   #note, #cancellation {
     color: #444;
     font-weight: bold;
-  }
-  h1 {
-    font-size: 2.75em;
-  }
-  h2 {
-    font-size: 2em;
-  }
-  a {
-    font-weight: bold;
-    text-decoration: underline;
-    color: #43578f;
   }
   #winterList, #summerList {
     display: grid;
