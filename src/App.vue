@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div id="appwrap">
     <header class="container">
       <b-navbar toggleable="md">
         <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
@@ -20,7 +20,7 @@
 		<main class="container">
 			<router-view/>
 		</main>
-    <footer class="container fixed-bottom">
+    <footer class="container">
       <b-navbar toggleable="md">
       <p id="copyright">© Copyright Lost Lake Resort.</p>
         <b-navbar-nav class="ml-auto">
@@ -58,6 +58,12 @@ export default {
 
 
 <style lang="scss">
+#appwrap {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+}
 header {
   margin-bottom: 3em;
   @media (max-width: 767.98px) {

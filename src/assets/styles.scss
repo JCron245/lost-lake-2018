@@ -11,6 +11,10 @@
 @import "../../node_modules/bootstrap/scss/utilities";
 
 // Global styles go here, will have greater specificty than the bootstrap css
+html, body {
+    width: 100%;
+    height: 100%;
+}
 a:not(.nav-link) {
     font-weight: bold;
     text-decoration: underline;
