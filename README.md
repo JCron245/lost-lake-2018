@@ -1,6 +1,9 @@
 # lost-lake
 Wanted to try out the new Vue cli 3 so I rewrote Lost Lakes website. 
 
+**Deployed at:**
+Deployed on Linode @ http://lostlakeriverresort.com
+
 **In Use:**
 * Feather Icons - https://feathericons.com/
 * vue-feather-icons - https://vue-feather-icons.netlify.com/
