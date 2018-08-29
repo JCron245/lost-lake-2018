@@ -115,7 +115,7 @@ nav.navbar {
     .nav-item {
       font-size: 1em;
       > .nav-link {
-				padding: .75em;
+				padding: .75em !important;
       }
     }
     .navbar-brand {
@@ -142,7 +142,7 @@ nav.navbar {
   }
   > a.nav-link {
     color: #eee !important;
-		padding: 1em;
+		padding: 1em !important;
 		&.active {
 				background-color: #6579af;
 				color: black !important;
