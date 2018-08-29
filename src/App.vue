@@ -29,7 +29,7 @@
 		</main>
     <footer class="container">
       <b-navbar toggleable="md">
-      <p id="copyright">© Copyright Lost Lake Resort.</p>
+				<p id="copyright">© Copyright Lost Lake Resort.</p>
         <b-navbar-nav class="ml-auto">
             <b-nav-item to="/home">Home</b-nav-item>
             <b-nav-item to="/services">Services</b-nav-item>
@@ -100,10 +100,8 @@ header {
   }
 }
 footer {
-  margin-bottom: 2em;
   display: block;
   @media (max-width: 767.98px) {
-    margin-bottom: 0;
     .navbar-nav {
       display: none;
     }
@@ -117,8 +115,7 @@ nav.navbar {
     .nav-item {
       font-size: 1em;
       > .nav-link {
-        padding-right: .25rem;
-        padding-left: .25rem;
+				padding: .75em;
       }
     }
     .navbar-brand {
@@ -127,17 +124,12 @@ nav.navbar {
   }
 }
 .nav-item {
-  text-decoration: none;
-  color: #fff;
   background-color: #43578f;
   text-align: center;
   letter-spacing: .5px;
   transition: background-color .2s ease-out;
-  cursor: pointer;
   border-right: 1px solid black;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
-  font-size: 1.25em;
-  padding: .33em;
   font-weight: 500;
   &:hover {
     background-color: #6579af;
@@ -150,6 +142,11 @@ nav.navbar {
   }
   > a.nav-link {
     color: #eee !important;
+		padding: 1em;
+		&.active {
+				background-color: #6579af;
+				color: black !important;
+		}
   }
 }
 #headerLogo {
@@ -165,12 +162,11 @@ nav.navbar {
   font-size: .75em;
 }
 .fade-enter-active,.fade-leave-active {
-  transition-duration: 0.29s;
+  transition-duration: .29s;
   transition-property: height, opacity;
   transition-timing-function: ease;
 	overflow: hidden;
 }
-
 .fade-enter,
 .fade-leave-active {
   opacity: 0
