@@ -10,13 +10,13 @@
         <p id="summerSub">Full RV Hook-Up</p>
         <dl id="summerList" aria-labelledby="summerSub">
           <dt>Daily:</dt>
-          <dd>$33 + tax</dd>
+          <dd>$33.00</dd>
           <dt>Weekly:</dt>
-          <dd>$180 + tax</dd>
+          <dd>$180.00</dd>
           <dt>2 Weeks:</dt>
-          <dd>$340 + tax</dd>
+          <dd>$340.00</dd>
           <dt>Monthly:</dt>
-          <dd>$650 + tax</dd>
+          <dd>$650.00</dd>
         </dl>
       </div>
       <div>
@@ -25,11 +25,11 @@
         <p id="winterSub">Full RV Hook-Up</p>
         <dl id="winterList" aria-labelledby="winterSub">
           <dt>Daily:</dt>
-          <dd>$33 + tax</dd>
+          <dd>$33.00</dd>
           <dt>Weekly:</dt>
-          <dd>$180 + tax</dd>
+          <dd>$180.00</dd>
           <dt>Monthly:</dt>
-          <dd>$280 + tax</dd>
+          <dd>$280.00</dd>
         </dl>
       </div>
     </div>
@@ -46,7 +46,7 @@
       <h2 id="storageTitle">Storage <archive-icon id="archiveIcon" class="icon" aria-hidden="true"></archive-icon></h2>
       <dl id="storageList" aria-labelledby="storageTitle">
         <dt>Monthly Storage:</dt>
-        <dd>$45</dd>
+        <dd>$45.00</dd>
       </dl>
     </div>
     <p>
@@ -89,13 +89,13 @@ export default {
   }
   #ratesContainer {
     display: flex;
-    padding-top: 1em;
+    margin-top: 1em;
     @media (max-width: 575.98px) { 
       flex-direction: column;
     }
     > div {
       display: block;
-      padding: 1.5em;
+      padding: 1.33em;
       flex-grow: 1;
       flex-basis: 0;
       border: 1px solid #BBB;
@@ -154,5 +154,6 @@ export default {
   #winterList, #summerList {
     display: grid;
     grid-template-columns: 50% 50%;
+		margin: 0 auto 0 .2rem;
   }
 </style>
