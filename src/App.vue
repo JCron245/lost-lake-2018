@@ -43,22 +43,17 @@
 </template>
 
 <script>
-import bNavbar from "bootstrap-vue/es/components/navbar/navbar";
-import bNavbarNav from "bootstrap-vue/es/components/navbar/navbar-nav";
-import bNavbarBrand from "bootstrap-vue/es/components/navbar/navbar-brand";
-import bNavbarToggle from "bootstrap-vue/es/components/navbar/navbar-toggle";
-import bCollapse from "bootstrap-vue/es/components/collapse/collapse";
-import bNavItem from "bootstrap-vue/es/components/nav/nav-item";
+import { BNavbar, BNavbarNav, BNavbarBrand, BNavbarToggle, BCollapse, BNavItem} from 'bootstrap-vue';
 
 export default {
   name: "app",
   components: {
-    "b-navbar": bNavbar,
-    "b-navbar-nav": bNavbarNav,
-    "b-navbar-brand": bNavbarBrand,
-    "b-navbar-toggle": bNavbarToggle,
-    "b-collapse": bCollapse,
-    "b-nav-item": bNavItem
+    "b-navbar": BNavbar,
+    "b-navbar-nav": BNavbarNav,
+    "b-navbar-brand": BNavbarBrand,
+    "b-navbar-toggle": BNavbarToggle,
+    "b-collapse": BCollapse,
+    "b-nav-item": BNavItem
 	},
 	data() {
     return {

@@ -59,8 +59,7 @@
 </template>
 
 <script>
-import bCarousel from 'bootstrap-vue/es/components/carousel/carousel';
-import bCarouselSlide from 'bootstrap-vue/es/components/carousel/carousel-slide';
+import { BCarousel, BCarouselSlide } from 'bootstrap-vue';
 
 export default {
   name: "HomeComponent",
@@ -74,8 +73,8 @@ export default {
     }
   },
   components: {
-    'b-carousel': bCarousel,
-    'b-carousel-slide': bCarouselSlide
+    'b-carousel': BCarousel,
+    'b-carousel-slide': BCarouselSlide
   }
 };
 </script>
