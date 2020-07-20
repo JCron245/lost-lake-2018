@@ -28,7 +28,7 @@
         <li>Laundromat</li>
         <li>Storage</li>
       </ul>
-      <img src="../assets/general.png" alt="Lost Lake Resort General Store" />
+      <img src="../assets/general.png" rel="preload" alt="Lost Lake Resort General Store" />
     </div>
   </div>
 </template>
