@@ -6,18 +6,24 @@
       Here is our contact information so you can call, write, or visit us! 
       We would love to hear from you!
     </p>
-    <address>
-      <div>
-        <span>Email: </span><a href="mailto:lostlakeriverresort@gmail.com">lostlakeriverresort@gmail.com</a>
+    <address class="address">
+      <div class="address-section">
+        <span>Email: </span>
+        <a href="mailto:lostlakeriverresort@gmail.com">
+          lostlakeriverresort@gmail.com
+        </a>
       </div>
-      <div>
-        <span>Phone: </span><a href="tel:1-760-664-4413">1(760)664-4413</a>
+      <div class="address-section">
+        <span>Phone: </span>
+        <a href="tel:1-760-664-4413">
+          1(760)664-4413
+        </a>
       </div>
-      <div id="locationSection">
+      <div class="address-section">
         <span>Location: </span>
         We are located 31 miles north of Blythe California on highway 95 along the Colorado river.
       </div>
-      <div id="postalSection">
+      <div class="address-section">
         <span>Postal Address: </span>
         42500 US HWY 95<br/>
         Blythe CA 92225
@@ -36,17 +42,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  #locationSection {
-    margin: 1em 0;
-  }
-  #locationSection, #postalSection {
-    > span {
-      display: block;
-    }
-  }
-  address {
-    > div {
-      > span {
+  .address {
+    .address-section {
+      margin: 1em 0;
+      span {
+        display: block;
         font-weight: bold;
       }
     }

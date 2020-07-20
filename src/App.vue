@@ -158,7 +158,7 @@ nav.navbar {
 }
 .fade-enter-active,.fade-leave-active {
   transition-duration: .29s;
-  transition-property: height, opacity;
+  transition-property: opacity;
   transition-timing-function: ease;
 	overflow: hidden;
 }
